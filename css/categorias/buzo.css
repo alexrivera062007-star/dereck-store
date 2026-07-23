@@ -1,0 +1,24 @@
+/* ===== DERECK — Página "Buzos" =====
+   Estilos propios de esta categoría. El resto del sitio
+   (header, footer, carrito, modal, etc.) vive en css/styles.css.
+   Aquí solo tocas cosas que son SOLO de "Buzos". */
+
+.cat-buzo {
+  --accent: #7A6A53;
+}
+
+/* Etiqueta "Nuevo" con el color de esta categoría (las de "Oferta" siguen en bronce) */
+.cat-buzo .product-tag:not(.oferta-tag) {
+  background: var(--accent);
+}
+
+/* Línea de acento debajo del nombre/precio del producto */
+.cat-buzo .product-info {
+  border-image: linear-gradient(90deg, var(--accent), transparent) 1 0 0 0;
+}
+
+/* Borde al pasar el mouse sobre una tarjeta */
+.cat-buzo .product-card:hover {
+  border-color: var(--accent); /* si el navegador soporta color-mix, usa una versión más suave */
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
