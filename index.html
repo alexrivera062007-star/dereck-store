@@ -1,0 +1,3475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DERECK — Urban Style</title>
+  <meta name="description" content="DERECK Urban Style — Ropa urbana para hombre. Calidad y actitud en cada prenda."/>
+  <link rel="icon" href="img/logo-dereck.png"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span><i class="fas fa-truck"></i> ENVÍOS A NIVEL NACIONAL</span>
+      <span><i class="fas fa-crown"></i> NUEVA COLECCIÓN DISPONIBLE</span>
+      <span><i class="fab fa-whatsapp"></i> COMPRA DIRECTA POR WHATSAPP</span>
+      <span><i class="fas fa-truck"></i> ENVÍOS A NIVEL NACIONAL</span>
+      <span><i class="fas fa-crown"></i> NUEVA COLECCIÓN DISPONIBLE</span>
+      <span><i class="fab fa-whatsapp"></i> COMPRA DIRECTA POR WHATSAPP</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-desktop" id="navDesktop">
+        <a href="#nuevos" class="nav-link">Nuevos</a>
+        <a href="#coleccion" class="nav-link">Colección</a>
+        <a href="#ofertas" class="nav-link nav-highlight">Ofertas</a>
+      </nav>
+
+      <a href="index.html" class="logo-link">
+        <img src="img/logo-dereck.png" alt="DERECK Urban Style" class="logo-img"/>
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Buscar"><i class="fas fa-search"></i></button>
+        <button class="icon-btn wishlist-btn" aria-label="Favoritos">
+          <i class="fas fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Carrito" id="cartToggle">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#nuevos">Nuevos</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" placeholder="Buscar producto..." id="searchInput"/>
+      <button onclick="document.getElementById('searchBar').classList.remove('active')"><i class="fas fa-times"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-crown">
+      <svg viewBox="0 0 100 60" class="crown-svg">
+        <path d="M10 50 L15 20 L30 38 L50 12 L70 38 L85 20 L90 50 Z" fill="currentColor"/>
+        <rect x="8" y="50" width="84" height="6" rx="2" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Colección 2025 — Solo Hombre</p>
+      <h1 class="hero-title">VISTE CON<br/><span>ACTITUD</span></h1>
+      <p class="hero-sub">Prendas urbanas con carácter, pensadas para quienes no piden permiso para destacar.</p>
+      <div class="hero-cta">
+        <a href="#nuevos" class="btn btn-primary">Ver Colección</a>
+        <a href="#ofertas" class="btn btn-ghost">Ofertas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <i class="fas fa-truck"></i>
+        <div><strong>Envíos Nacionales</strong><span>A todo el Perú</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fab fa-whatsapp"></i>
+        <div><strong>Compra por WhatsApp</strong><span>Rápido y sin complicaciones</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-undo"></i>
+        <div><strong>Cambios Garantizados</strong><span>Si no calza, lo cambiamos</span></div>
+      </div>
+      <div class="trust-item">
+        <i class="fas fa-crown"></i>
+        <div><strong>Diseños Exclusivos</strong><span>Calidad premium</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY PILLS -->
+  <section class="categories-strip" id="coleccion">
+    <div class="container">
+      <div class="category-pills">
+        <button class="pill active" data-filter="all">Todos</button>
+        <button class="pill" data-filter="jeans">Jeans</button>
+        <button class="pill" data-filter="buzo">Buzos</button>
+        <button class="pill" data-filter="polo">Polos</button>
+        <button class="pill" data-filter="c:\Users\USUARIO\Downloads\1.jpeg">Poleras</button>
+        <button class="pill" data-filter="casaca">Casacas</button>
+        <button class="pill" data-filter="short">Shorts</button>
+        <button class="pill" data-filter="zapatilla">Zapatillas</button>
+        <button class="pill" data-filter="gorra">Gorras</button>
+        <button class="pill" data-filter="oferta">Ofertas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="products-section" id="nuevos">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="section-eyebrow">Catálogo</p>
+          <h2>Nuestros Productos</h2>
+        </div>
+        <div class="sort-select">
+          <select id="sortSelect">
+            <option value="default">Ordenar por</option>
+            <option value="price-asc">Menor precio</option>
+            <option value="price-desc">Mayor precio</option>
+            <option value="name">Nombre A-Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="149"
+             data-name="Jean Slim Fit"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-slim-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-slim-fit.jpeg" alt="Jean Slim Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Slim Fit</h3>
+            <p class="product-price">S/ 149</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="119"
+             data-name="Jean Baggy"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-baggy.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-baggy.jpeg" alt="Jean Baggy"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Baggy</h3>
+            <p class="product-price">S/ 119</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="119"
+             data-name="Jean Recto Clásico"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-recto-clásico.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-recto-clásico.jpeg" alt="Jean Recto Clásico"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Recto Clásico</h3>
+            <p class="product-price">S/ 119</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="159"
+             data-name="Jean Cargo"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-cargo.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-cargo.jpeg" alt="Jean Cargo"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Cargo</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="129"
+             data-name="Jean Skinny"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-skinny.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-skinny.jpeg" alt="Jean Skinny"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Skinny</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="129"
+             data-name="Jean Straight"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-straight.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-straight.jpeg" alt="Jean Straight"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Straight</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="129"
+             data-name="Jean Wide Leg"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-wide-leg.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-wide-leg.jpeg" alt="Jean Wide Leg"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Wide Leg</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="119"
+             data-name="Jean Mom Fit Hombre"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-mom-fit-hombre.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-mom-fit-hombre.jpeg" alt="Jean Mom Fit Hombre"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Mom Fit Hombre</h3>
+            <p class="product-price">S/ 119</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="159"
+             data-name="Jean Destroyed"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-destroyed.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-destroyed.jpeg" alt="Jean Destroyed"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Destroyed</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="119"
+             data-name="Jean Premium Denim"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-premium-denim.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-premium-denim.jpeg" alt="Jean Premium Denim"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Premium Denim</h3>
+            <p class="product-price">S/ 119</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="159"
+             data-name="Jean Loose Fit"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-loose-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-loose-fit.jpeg" alt="Jean Loose Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Loose Fit</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="159"
+             data-name="Jean Regular Fit"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-regular-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-regular-fit.jpeg" alt="Jean Regular Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Regular Fit</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="169"
+             data-name="Jean Tapered"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-tapered.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-tapered.jpeg" alt="Jean Tapered"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Tapered</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="149"
+             data-name="Jean Vintage Wash"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-vintage-wash.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-vintage-wash.jpeg" alt="Jean Vintage Wash"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Vintage Wash</h3>
+            <p class="product-price">S/ 149</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans"
+             data-price="119"
+             data-name="Jean Urban Denim"
+             data-colors="Azul,Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-urban-denim.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-urban-denim.jpeg" alt="Jean Urban Denim"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Urban Denim</h3>
+            <p class="product-price">S/ 119</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="159"
+             data-name="Buzo Crown Premium"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-crown-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-crown-premium.jpeg" alt="Buzo Crown Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Crown Premium</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="149"
+             data-name="Buzo Oversize"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-oversize.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-oversize.jpeg" alt="Buzo Oversize"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Oversize</h3>
+            <p class="product-price">S/ 149</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="129"
+             data-name="Buzo Heritage"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-heritage.jpeg" alt="Buzo Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Heritage</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="129"
+             data-name="Buzo Urban Fit"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-urban-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-urban-fit.jpeg" alt="Buzo Urban Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Urban Fit</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="129"
+             data-name="Buzo Essential"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-essential.jpeg" alt="Buzo Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Essential</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="139"
+             data-name="Buzo Street Style"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-street-style.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-street-style.jpeg" alt="Buzo Street Style"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Street Style</h3>
+            <p class="product-price">S/ 139</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="139"
+             data-name="Buzo Classic Fit"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-classic-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-classic-fit.jpeg" alt="Buzo Classic Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Classic Fit</h3>
+            <p class="product-price">S/ 139</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="159"
+             data-name="Buzo Comfort"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-comfort.jpeg" alt="Buzo Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Comfort</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="159"
+             data-name="Buzo Tech Fleece"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-tech-fleece.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-tech-fleece.jpeg" alt="Buzo Tech Fleece"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Tech Fleece</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="129"
+             data-name="Buzo Minimal"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-minimal.jpeg" alt="Buzo Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Minimal</h3>
+            <p class="product-price">S/ 129</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="159"
+             data-name="Buzo Sport"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-sport.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-sport.jpeg" alt="Buzo Sport"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Sport</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="139"
+             data-name="Buzo Relax Fit"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-relax-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-relax-fit.jpeg" alt="Buzo Relax Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Relax Fit</h3>
+            <p class="product-price">S/ 139</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="169"
+             data-name="Buzo Bold"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-bold.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-bold.jpeg" alt="Buzo Bold"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Bold</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="169"
+             data-name="Buzo Signature"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-signature.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-signature.jpeg" alt="Buzo Signature"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Signature</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo"
+             data-price="169"
+             data-name="Buzo Premium Cotton"
+             data-colors="Negro,Gris,Azul Marino"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-premium-cotton.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-premium-cotton.jpeg" alt="Buzo Premium Cotton"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Premium Cotton</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="99"
+             data-name="Polo Oversize"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-oversize.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-oversize.jpeg" alt="Polo Oversize"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Oversize</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="89"
+             data-name="Polo Boxy"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-boxy.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-boxy.jpeg" alt="Polo Boxy"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Boxy</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="79"
+             data-name="Polo Classic"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-classic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-classic.jpeg" alt="Polo Classic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Classic</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="89"
+             data-name="Polo Slim Fit"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-slim-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-slim-fit.jpeg" alt="Polo Slim Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Slim Fit</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="99"
+             data-name="Polo Essential"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-essential.jpeg" alt="Polo Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Essential</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="79"
+             data-name="Polo Premium"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-premium.jpeg" alt="Polo Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Premium</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="59"
+             data-name="Polo Urban"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-urban.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-urban.jpeg" alt="Polo Urban"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Urban</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="69"
+             data-name="Polo Street"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-street.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-street.jpeg" alt="Polo Street"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Street</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="89"
+             data-name="Polo Minimal"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-minimal.jpeg" alt="Polo Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Minimal</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="89"
+             data-name="Polo Heritage"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-heritage.jpeg" alt="Polo Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Heritage</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="79"
+             data-name="Polo Crown"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-crown.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-crown.jpeg" alt="Polo Crown"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Crown</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="69"
+             data-name="Polo Basic"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-basic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-basic.jpeg" alt="Polo Basic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Basic</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="79"
+             data-name="Polo Comfort"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-comfort.jpeg" alt="Polo Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Comfort</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="89"
+             data-name="Polo Signature"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-signature.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-signature.jpeg" alt="Polo Signature"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Signature</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo"
+             data-price="69"
+             data-name="Polo Bold"
+             data-colors="Negro,Blanco,Gris,Bronce"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-bold.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-bold.jpeg" alt="Polo Bold"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Bold</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="79"
+             data-name="Polera Oversize"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/1.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/1.jpeg" alt="Polera Oversize"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Oversize</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="99"
+             data-name="Polera Crown"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-crown.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-crown.jpeg" alt="Polera Crown"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Crown</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="79"
+             data-name="Polera Urban"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-urban.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-urban.jpeg" alt="Polera Urban"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Urban</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="99"
+             data-name="Polera Essential"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-essential.jpeg" alt="Polera Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Essential</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="99"
+             data-name="Polera Street Style"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-street-style.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-street-style.jpeg" alt="Polera Street Style"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Street Style</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="109"
+             data-name="Polera Premium"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-premium.jpeg" alt="Polera Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Premium</h3>
+            <p class="product-price">S/ 109</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="89"
+             data-name="Polera Classic"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-classic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-classic.jpeg" alt="Polera Classic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Classic</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="79"
+             data-name="Polera Boxy Fit"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-boxy-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-boxy-fit.jpeg" alt="Polera Boxy Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Boxy Fit</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="99"
+             data-name="Polera Heritage"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-heritage.jpeg" alt="Polera Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Heritage</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="109"
+             data-name="Polera Minimal"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-minimal.jpeg" alt="Polera Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Minimal</h3>
+            <p class="product-price">S/ 109</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="79"
+             data-name="Polera Signature"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-signature.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-signature.jpeg" alt="Polera Signature"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Signature</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="99"
+             data-name="Polera Comfort"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-comfort.jpeg" alt="Polera Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Comfort</h3>
+            <p class="product-price">S/ 99</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="79"
+             data-name="Polera Bold Print"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-bold-print.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-bold-print.jpeg" alt="Polera Bold Print"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Bold Print</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="109"
+             data-name="Polera Basic"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-basic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-basic.jpeg" alt="Polera Basic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Basic</h3>
+            <p class="product-price">S/ 109</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera"
+             data-price="89"
+             data-name="Polera Relax Fit"
+             data-colors="Negro,Blanco,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-relax-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-relax-fit.jpeg" alt="Polera Relax Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Relax Fit</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="239"
+             data-name="Casaca Bomber"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-bomber.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-bomber.jpeg" alt="Casaca Bomber"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Bomber</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="239"
+             data-name="Casaca Windbreaker"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-windbreaker.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-windbreaker.jpeg" alt="Casaca Windbreaker"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Windbreaker</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="209"
+             data-name="Casaca Urban"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-urban.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-urban.jpeg" alt="Casaca Urban"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Urban</h3>
+            <p class="product-price">S/ 209</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="239"
+             data-name="Casaca Cargo"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-cargo.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-cargo.jpeg" alt="Casaca Cargo"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Cargo</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="189"
+             data-name="Casaca Denim"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-denim.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-denim.jpeg" alt="Casaca Denim"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Denim</h3>
+            <p class="product-price">S/ 189</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="249"
+             data-name="Casaca Puffer"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-puffer.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-puffer.jpeg" alt="Casaca Puffer"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Puffer</h3>
+            <p class="product-price">S/ 249</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="169"
+             data-name="Casaca Track"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-track.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-track.jpeg" alt="Casaca Track"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Track</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="169"
+             data-name="Casaca Heritage"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-heritage.jpeg" alt="Casaca Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Heritage</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="249"
+             data-name="Casaca Street"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-street.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-street.jpeg" alt="Casaca Street"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Street</h3>
+            <p class="product-price">S/ 249</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="189"
+             data-name="Casaca Premium"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-premium.jpeg" alt="Casaca Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Premium</h3>
+            <p class="product-price">S/ 189</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="199"
+             data-name="Casaca Crown"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-crown.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-crown.jpeg" alt="Casaca Crown"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Crown</h3>
+            <p class="product-price">S/ 199</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="169"
+             data-name="Casaca Oversize"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-oversize.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-oversize.jpeg" alt="Casaca Oversize"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Oversize</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="189"
+             data-name="Casaca Technical"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-technical.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-technical.jpeg" alt="Casaca Technical"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Technical</h3>
+            <p class="product-price">S/ 189</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="179"
+             data-name="Casaca Varsity"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-varsity.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-varsity.jpeg" alt="Casaca Varsity"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Varsity</h3>
+            <p class="product-price">S/ 179</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca"
+             data-price="209"
+             data-name="Casaca Essential"
+             data-colors="Negro,Verde Militar,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-essential.jpeg" alt="Casaca Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Essential</h3>
+            <p class="product-price">S/ 209</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="69"
+             data-name="Short Cargo"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-cargo.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-cargo.jpeg" alt="Short Cargo"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Cargo</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="79"
+             data-name="Short Deportivo"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-deportivo.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-deportivo.jpeg" alt="Short Deportivo"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Deportivo</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="89"
+             data-name="Short Urban"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-urban.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-urban.jpeg" alt="Short Urban"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Urban</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="79"
+             data-name="Short Jogger"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-jogger.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-jogger.jpeg" alt="Short Jogger"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Jogger</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="59"
+             data-name="Short Essential"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-essential.jpeg" alt="Short Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Essential</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="79"
+             data-name="Short Street Style"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-street-style.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-street-style.jpeg" alt="Short Street Style"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Street Style</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="79"
+             data-name="Short Classic"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-classic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-classic.jpeg" alt="Short Classic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Classic</h3>
+            <p class="product-price">S/ 79</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="69"
+             data-name="Short Premium"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-premium.jpeg" alt="Short Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Premium</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="69"
+             data-name="Short Basic"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-basic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-basic.jpeg" alt="Short Basic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Basic</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="59"
+             data-name="Short Bermuda"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-bermuda.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-bermuda.jpeg" alt="Short Bermuda"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Bermuda</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="89"
+             data-name="Short Comfort"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-comfort.jpeg" alt="Short Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Comfort</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="89"
+             data-name="Short Bold"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-bold.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-bold.jpeg" alt="Short Bold"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Bold</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="59"
+             data-name="Short Relax Fit"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-relax-fit.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-relax-fit.jpeg" alt="Short Relax Fit"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Relax Fit</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="89"
+             data-name="Short Crown"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-crown.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-crown.jpeg" alt="Short Crown"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Crown</h3>
+            <p class="product-price">S/ 89</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short"
+             data-price="69"
+             data-name="Short Minimal"
+             data-colors="Negro,Gris,Azul"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-minimal.jpeg" alt="Short Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Minimal</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="169"
+             data-name="Zapatilla Urban Runner"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-urban-runner.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-urban-runner.jpeg" alt="Zapatilla Urban Runner"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Urban Runner</h3>
+            <p class="product-price">S/ 169</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="209"
+             data-name="Zapatilla Street"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-street.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-street.jpeg" alt="Zapatilla Street"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Street</h3>
+            <p class="product-price">S/ 209</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="199"
+             data-name="Zapatilla Classic"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-classic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-classic.jpeg" alt="Zapatilla Classic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Classic</h3>
+            <p class="product-price">S/ 199</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="189"
+             data-name="Zapatilla Chunky"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-chunky.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-chunky.jpeg" alt="Zapatilla Chunky"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Chunky</h3>
+            <p class="product-price">S/ 189</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="239"
+             data-name="Zapatilla Low Top"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-low-top.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-low-top.jpeg" alt="Zapatilla Low Top"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Low Top</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="239"
+             data-name="Zapatilla High Top"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-high-top.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-high-top.jpeg" alt="Zapatilla High Top"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla High Top</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="229"
+             data-name="Zapatilla Premium"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-premium.jpeg" alt="Zapatilla Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Premium</h3>
+            <p class="product-price">S/ 229</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="179"
+             data-name="Zapatilla Sport"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-sport.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-sport.jpeg" alt="Zapatilla Sport"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Sport</h3>
+            <p class="product-price">S/ 179</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="239"
+             data-name="Zapatilla Essential"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-essential.jpeg" alt="Zapatilla Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Essential</h3>
+            <p class="product-price">S/ 239</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="199"
+             data-name="Zapatilla Crown"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-crown.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-crown.jpeg" alt="Zapatilla Crown"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Crown</h3>
+            <p class="product-price">S/ 199</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="259"
+             data-name="Zapatilla Comfort"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-comfort.jpeg" alt="Zapatilla Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Comfort</h3>
+            <p class="product-price">S/ 259</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="249"
+             data-name="Zapatilla Bold"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-bold.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-bold.jpeg" alt="Zapatilla Bold"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Bold</h3>
+            <p class="product-price">S/ 249</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="249"
+             data-name="Zapatilla Minimal"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-minimal.jpeg" alt="Zapatilla Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Minimal</h3>
+            <p class="product-price">S/ 249</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="159"
+             data-name="Zapatilla Heritage"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-heritage.jpeg" alt="Zapatilla Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Heritage</h3>
+            <p class="product-price">S/ 159</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla"
+             data-price="179"
+             data-name="Zapatilla Signature"
+             data-colors="Negro,Blanco,Gris"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-signature.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-signature.jpeg" alt="Zapatilla Signature"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Signature</h3>
+            <p class="product-price">S/ 179</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Snapback"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-snapback.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-snapback.jpeg" alt="Gorra Snapback"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag">Nuevo</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Snapback</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Crown Classic"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-crown-classic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-crown-classic.jpeg" alt="Gorra Crown Classic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Crown Classic</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Trucker"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-trucker.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-trucker.jpeg" alt="Gorra Trucker"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Trucker</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Dad Hat"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-dad-hat.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-dad-hat.jpeg" alt="Gorra Dad Hat"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Dad Hat</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="59"
+             data-name="Gorra Urban"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-urban.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-urban.jpeg" alt="Gorra Urban"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Urban</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Bordada"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-bordada.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-bordada.jpeg" alt="Gorra Bordada"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Bordada</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Premium"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-premium.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-premium.jpeg" alt="Gorra Premium"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Premium</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Essential"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-essential.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-essential.jpeg" alt="Gorra Essential"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Essential</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Street"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-street.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-street.jpeg" alt="Gorra Street"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Street</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Minimal"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-minimal.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-minimal.jpeg" alt="Gorra Minimal"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Minimal</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="59"
+             data-name="Gorra Signature"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-signature.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-signature.jpeg" alt="Gorra Signature"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Signature</h3>
+            <p class="product-price">S/ 59</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Bold"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-bold.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-bold.jpeg" alt="Gorra Bold"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Bold</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="69"
+             data-name="Gorra Comfort"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-comfort.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-comfort.jpeg" alt="Gorra Comfort"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Comfort</h3>
+            <p class="product-price">S/ 69</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Basic"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-basic.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-basic.jpeg" alt="Gorra Basic"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Basic</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra"
+             data-price="49"
+             data-name="Gorra Heritage"
+             data-colors="Negro,Beige,Blanco"
+             data-sizes="Única"
+             data-img="img/productos/gorra-heritage.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-heritage.jpeg" alt="Gorra Heritage"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Heritage</h3>
+            <p class="product-price">S/ 49</p>
+          </div>
+        </div>        <div class="product-card"
+             data-category="jeans oferta"
+             data-price="109"
+             data-original="149"
+             data-name="Jean Slim Fit Oferta"
+             data-colors="Azul,Negro"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-slim-fit-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-slim-fit-oferta.jpeg" alt="Jean Slim Fit Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-27%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Slim Fit Oferta</h3>
+            <p class="product-price">S/ 109 <s class="original-price">S/ 149</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo oferta"
+             data-price="119"
+             data-original="159"
+             data-name="Buzo Oversize Oferta"
+             data-colors="Negro,Gris"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-oversize-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-oversize-oferta.jpeg" alt="Buzo Oversize Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-25%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Oversize Oferta</h3>
+            <p class="product-price">S/ 119 <s class="original-price">S/ 159</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo oferta"
+             data-price="59"
+             data-original="89"
+             data-name="Polo Boxy Oferta"
+             data-colors="Negro,Blanco"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-boxy-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-boxy-oferta.jpeg" alt="Polo Boxy Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-34%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Boxy Oferta</h3>
+            <p class="product-price">S/ 59 <s class="original-price">S/ 89</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera oferta"
+             data-price="69"
+             data-original="99"
+             data-name="Polera Crown Oferta"
+             data-colors="Negro,Beige"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-crown-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-crown-oferta.jpeg" alt="Polera Crown Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-30%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Crown Oferta</h3>
+            <p class="product-price">S/ 69 <s class="original-price">S/ 99</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca oferta"
+             data-price="159"
+             data-original="219"
+             data-name="Casaca Bomber Oferta"
+             data-colors="Negro,Verde Militar"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-bomber-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-bomber-oferta.jpeg" alt="Casaca Bomber Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-27%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Bomber Oferta</h3>
+            <p class="product-price">S/ 159 <s class="original-price">S/ 219</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short oferta"
+             data-price="49"
+             data-original="79"
+             data-name="Short Cargo Oferta"
+             data-colors="Negro,Gris"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-cargo-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-cargo-oferta.jpeg" alt="Short Cargo Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-38%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Cargo Oferta</h3>
+            <p class="product-price">S/ 49 <s class="original-price">S/ 79</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla oferta"
+             data-price="169"
+             data-original="229"
+             data-name="Zapatilla Urban Oferta"
+             data-colors="Negro,Blanco"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-urban-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-urban-oferta.jpeg" alt="Zapatilla Urban Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-26%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Urban Oferta</h3>
+            <p class="product-price">S/ 169 <s class="original-price">S/ 229</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="gorra oferta"
+             data-price="39"
+             data-original="59"
+             data-name="Gorra Snapback Oferta"
+             data-colors="Negro,Beige"
+             data-sizes="Única"
+             data-img="img/productos/gorra-snapback-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/gorra-snapback-oferta.jpeg" alt="Gorra Snapback Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-34%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Gorra Snapback Oferta</h3>
+            <p class="product-price">S/ 39 <s class="original-price">S/ 59</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="jeans oferta"
+             data-price="119"
+             data-original="159"
+             data-name="Jean Baggy Oferta"
+             data-colors="Negro,Gris"
+             data-sizes="28,30,32,34,36"
+             data-img="img/productos/jean-baggy-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/jean-baggy-oferta.jpeg" alt="Jean Baggy Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-25%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Jean Baggy Oferta</h3>
+            <p class="product-price">S/ 119 <s class="original-price">S/ 159</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="buzo oferta"
+             data-price="129"
+             data-original="169"
+             data-name="Buzo Heritage Oferta"
+             data-colors="Azul Marino,Negro"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/buzo-heritage-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/buzo-heritage-oferta.jpeg" alt="Buzo Heritage Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-24%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Buzo Heritage Oferta</h3>
+            <p class="product-price">S/ 129 <s class="original-price">S/ 169</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polo oferta"
+             data-price="69"
+             data-original="99"
+             data-name="Polo Premium Oferta"
+             data-colors="Bronce,Gris"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polo-premium-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polo-premium-oferta.jpeg" alt="Polo Premium Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-30%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polo Premium Oferta</h3>
+            <p class="product-price">S/ 69 <s class="original-price">S/ 99</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="polera oferta"
+             data-price="59"
+             data-original="89"
+             data-name="Polera Street Oferta"
+             data-colors="Blanco,Negro"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/polera-street-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/polera-street-oferta.jpeg" alt="Polera Street Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-34%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Polera Street Oferta</h3>
+            <p class="product-price">S/ 59 <s class="original-price">S/ 89</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="short oferta"
+             data-price="45"
+             data-original="69"
+             data-name="Short Jogger Oferta"
+             data-colors="Azul,Negro"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/short-jogger-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/short-jogger-oferta.jpeg" alt="Short Jogger Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-35%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Short Jogger Oferta</h3>
+            <p class="product-price">S/ 45 <s class="original-price">S/ 69</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="zapatilla oferta"
+             data-price="179"
+             data-original="249"
+             data-name="Zapatilla Chunky Oferta"
+             data-colors="Gris,Negro"
+             data-sizes="39,40,41,42,43,44"
+             data-img="img/productos/zapatilla-chunky-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/zapatilla-chunky-oferta.jpeg" alt="Zapatilla Chunky Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-28%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Zapatilla Chunky Oferta</h3>
+            <p class="product-price">S/ 179 <s class="original-price">S/ 249</s></p>
+          </div>
+        </div>
+
+        <div class="product-card"
+             data-category="casaca oferta"
+             data-price="139"
+             data-original="199"
+             data-name="Casaca Windbreaker Oferta"
+             data-colors="Beige,Negro"
+             data-sizes="S,M,L,XL"
+             data-img="img/productos/casaca-windbreaker-oferta.jpeg">
+          <div class="product-image-wrap">
+            <img class="product-img" src="img/productos/casaca-windbreaker-oferta.jpeg" alt="Casaca Windbreaker Oferta"/>
+            <div class="product-overlay">
+              <button class="quick-add" onclick="openProductModal(this)">
+                <i class="fab fa-whatsapp"></i> Comprar
+              </button>
+            </div>
+            <button class="wishlist-heart" onclick="toggleWishlist(this)" aria-label="Guardar"><i class="far fa-heart"></i></button>
+            <span class="product-tag oferta-tag">-30%</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casaca Windbreaker Oferta</h3>
+            <p class="product-price">S/ 139 <s class="original-price">S/ 199</s></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MID BANNER -->
+  <section class="mid-banner" id="ofertas">
+    <div class="mid-banner-content">
+      <p class="hero-eyebrow" style="color:rgba(255,255,255,0.7)">Tiempo Limitado</p>
+      <h2>ES TIEMPO DE<br/>RENACER</h2>
+      <p>Hasta 30% de descuento en piezas seleccionadas.</p>
+      <a href="#nuevos" class="btn btn-primary-inverse" onclick="verOfertas(event)">Ver Ofertas</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="nosotros">
+    <div class="container about-grid">
+      <div class="about-image placeholder-img">
+        <i class="fas fa-image"></i>
+        <span>Foto de tu tienda / marca aquí</span>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Nosotros</p>
+        <h2>LA ESENCIA<br/>DERECK</h2>
+        <p>DERECK nace de la convicción de que la ropa urbana puede tener carácter, calidad y actitud al mismo tiempo. Cada prenda está pensada para el hombre que viste a su manera — sin reglas, sin excusas.</p>
+        <div class="about-stats">
+          <div><strong>+500</strong><span>Clientes satisfechos</span></div>
+          <div><strong>100%</strong><span>Envíos nacionales</span></div>
+          <div><strong>24/7</strong><span>Soporte por WhatsApp</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo-dereck.png" alt="DERECK" class="footer-logo"/>
+        <p>DERECK nace con la visión de redefinir la moda urbana masculina. Estilo, actitud y calidad en cada prenda.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/aleripa_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@aleripa_" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/51970530749" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Tienda</h5>
+        <a href="#coleccion" onclick="filterCategory('jeans')">Jeans</a>
+        <a href="#coleccion" onclick="filterCategory('buzo')">Buzos</a>
+        <a href="#coleccion" onclick="filterCategory('polo')">Polos</a>
+        <a href="#coleccion" onclick="filterCategory('polera')">Poleras</a>
+        <a href="#coleccion" onclick="filterCategory('casaca')">Casacas</a>
+        <a href="#coleccion" onclick="filterCategory('short')">Shorts</a>
+        <a href="#coleccion" onclick="filterCategory('zapatilla')">Zapatillas</a>
+        <a href="#coleccion" onclick="filterCategory('gorra')">Gorras</a>
+        <a href="#coleccion" onclick="filterCategory('oferta')">Ofertas</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <a href="https://wa.me/51970530749" target="_blank"><i class="fab fa-whatsapp"></i> +51 970 530 749</a>
+        <a href="https://www.google.com/maps/search/MERCADO+CENTRAL+VIRGEN+DEL+CARMEN+HUERTOS+DE+MANCHAY+PACHACAMAC+LIMA" target="_blank"><i class="fas fa-map-marker-alt"></i> Manchay — Pachacamac</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 DERECK Urban Style. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL (Talla / Color / WhatsApp) -->
+  <div class="modal-overlay" id="productModalOverlay" onclick="closeProductModal()"></div>
+  <div class="product-modal" id="productModal">
+    <button class="modal-close" onclick="closeProductModal()" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+
+    <!-- Imagen izquierda -->
+    <div class="modal-img placeholder-img" id="modalImgWrap">
+      <i class="fas fa-image"></i>
+    </div>
+
+    <!-- Panel de compra derecho -->
+    <div class="modal-info">
+      <h3 id="modalProductName">Nombre del producto</h3>
+
+      <div class="modal-price-row">
+        <span class="modal-price" id="modalProductPrice">S/ 0</span>
+        <span id="modalOriginalPrice"></span>
+      </div>
+
+      <div class="modal-divider"></div>
+
+      <!-- Talla -->
+      <div class="modal-field">
+        <label>
+          Talla
+          <span class="selected-val" id="modalSelectedSize">— elige una</span>
+        </label>
+        <div class="option-row" id="modalSizes"></div>
+      </div>
+
+      <!-- Color -->
+      <div class="modal-field">
+        <label>
+          Color
+          <span class="selected-val" id="modalSelectedColor">— elige uno</span>
+        </label>
+        <div class="color-row" id="modalColors"></div>
+      </div>
+
+      <!-- Cantidad -->
+      <div class="modal-bottom-row">
+        <div>
+          <div class="modal-field" style="margin-bottom:6px">
+            <label style="margin-bottom:8px">Cantidad</label>
+          </div>
+          <div class="qty-selector">
+            <button onclick="changeQty(-1)" aria-label="Restar">−</button>
+            <span id="modalQty">1</span>
+            <button onclick="changeQty(1)" aria-label="Sumar">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resumen del pedido -->
+      <div class="modal-summary" id="modalSummary">
+        <div class="modal-summary-row">
+          <span>Producto</span>
+          <span id="sumName" style="font-weight:600;color:var(--text)">—</span>
+        </div>
+        <div class="modal-summary-row">
+          <span>Talla · Color</span>
+          <span id="sumOptions">—</span>
+        </div>
+        <div class="modal-summary-row">
+          <span>Cantidad</span>
+          <span id="sumQty">1</span>
+        </div>
+        <div class="modal-summary-row total">
+          <span>Total</span>
+          <span id="sumTotal" style="color:var(--bronze)">S/ 0</span>
+        </div>
+      </div>
+
+      <!-- Botones de acción -->
+      <div class="modal-actions">
+        <button class="btn btn-whatsapp btn-full" onclick="sendToCart()">
+          <i class="fas fa-shopping-bag"></i> Agregar al carrito
+        </button>
+        <button class="btn btn-primary btn-full" onclick="buyNowWhatsApp()">
+          <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WISHLIST SIDEBAR -->
+  <div class="cart-overlay" id="wishlistOverlay" onclick="closeWishlist()"></div>
+  <aside class="cart-sidebar" id="wishlistSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-heart" style="color:var(--bronze);margin-right:8px"></i> Mis Favoritos</h3>
+      <button onclick="closeWishlist()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="wishlistItems">
+      <div class="cart-empty">
+        <i class="fas fa-heart"></i>
+        <p>No tienes favoritos aún</p>
+        <a href="#nuevos" class="btn btn-primary" onclick="closeWishlist()">Ver Productos</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Mi Carrito</h3>
+      <button onclick="closeCart()"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-bag"></i>
+        <p>Tu carrito está vacío</p>
+        <a href="#nuevos" class="btn btn-primary" onclick="closeCart()">Ver Productos</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">S/ 0</strong>
+      </div>
+      <button class="btn btn-whatsapp btn-full" onclick="checkoutWhatsApp()">
+        <i class="fab fa-whatsapp"></i> Finalizar pedido por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/51970530749?text=Hola%20DERECK%2C%20tengo%20una%20consulta" class="float-whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
